@@ -1,0 +1,151 @@
+/* styles.css */
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../img/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* styles.css */
+.navbar {
+  background-color: #3498db;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+  border: 1px solid #3498db;
+  border-radius: 3px;
+  padding: 2px;
+  transition: 0.2s;
+}
+
+.navbar-toggler-icon:hover {
+  background-color: lightgray;
+  border-color: lightgray;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* styles.css */
+.nav-link.login {
+  text-decoration: none;
+}
+
+.logo {
+  max-width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Tampilan desktop */
+.login-form {
+  margin: 70px auto;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.523);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add this CSS code to your styles.css */
+
+/* Existing CSS */
+.login-form .form-group {
+  width: 450px;
+}
+
+.login-form .col-md-6 {
+  width: 550px;
+}
+
+.login-form .form-group:last-child {
+  width: 100px;
+}
+
+.login-form .card-header {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+}
+
+/* Existing CSS */
+.login-form .form-group {
+  width: 450px;
+}
+
+.login-form .col-md-6 {
+  width: 550px;
+}
+
+.login-form .form-group:last-child {
+  width: 100px;
+}
+
+.login-form .card-header {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+}
+
+/* New CSS for password input and eye icon */
+.login-form .form-group label {
+  width: 30%;
+  text-align: right;
+  padding-right: 20px;
+  margin-right: 0;
+}
+
+.login-form .form-group .col-md-6 {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-form .form-group .col-md-6 input[type="password"] {
+  width: calc(100% - 30px); /* Adjust the width to account for the eye icon */
+}
+
+.login-form .form-group .col-md-6 i.bi-eye-slash {
+  cursor: pointer;
+  position: relative; /* Remove absolute positioning */
+}
+
+/* Add padding to the right of the eye icon to separate it from the input field */
+.login-form .form-group .col-md-6 i.bi-eye-slash {
+  padding-right: 10px; /* Adjust as needed */
+}
+
+/* Add the following CSS to center the "Perbarui" button */
+.login-form .col-md-6.offset-md-4 {
+  display: flex;
+  justify-content: center;
+}
+
